@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import variaveis from '../../styles/variaveis'
+import { BotaoCard } from '../../styles'
 
 import * as enums from '../../utils/enums/tarefa'
 
@@ -27,12 +28,17 @@ export const Card = styled.div`
   padding: 16px;
   margin-bottom: 32px;
   border-radius: 16px;
+
+  label {
+    display: flex;
+    margin-bottom: 16px;
+  }
 `
 
 export const TituloCard = styled.h3`
   font-weight: bold;
   font-size: 18px;
-  margin-bottom: 16px;
+  margin-left: 8px;
 `
 
 export const CheckboxCard = styled.input``
@@ -66,21 +72,6 @@ export const BarraAcoesCard = styled.div`
   padding-top: 16px;
 `
 
-export const BotaoCard = styled.button`
-  font-weight: bold;
-  font-size: 12px;
-  color: #fff;
-  padding: 8px 16px;
-  border: none;
-  cursor: pointer;
-  background-color: #2f3640;
-  border-radius: 8px;
-  margin-right: 8px;
-`
-
-export const BotaoSalvar = styled(BotaoCard)`
-  background-color: ${variaveis.verde};
-`
 export const BotaoCancelarRemover = styled(BotaoCard)`
   background-color: ${variaveis.vermelho};
 `
